@@ -1,6 +1,7 @@
-const express =  require('express')
+const express = require('express')
 const app = express()
-
+const colors = require('colors')
+require('./config/connection')
 
 app.set('view engine', 'pug')
 
@@ -9,5 +10,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen('3000', () => {
-  console.log('Listening in port localhost:3000');
+  console.log('Listening in port http://localhost:3000'.rainbow)
 })
