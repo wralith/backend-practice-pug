@@ -1,0 +1,6 @@
+# VS Code
+.vscode/*
+
+# Node
+node_modules/*
+pnpm-lock.yaml

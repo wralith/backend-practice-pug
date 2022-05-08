@@ -1,0 +1,49 @@
+body {
+  font-family: 'Ubuntu';
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(35deg, #4e5e50, #3f5544);
+  color: #efead8;
+}
+
+h1,h2,h3,h4 {
+  text-shadow: 0 0 3px #ffe37e;
+}
+
+#card {
+  width: 600px;
+  margin: auto;
+  text-align: left;
+  padding: 1rem;
+  background-color: rgba(45, 45, 45, 0.48);
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #card {
+    width: 90%;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+}
+
+li small {
+  font-size: small;
+  color: rgb(194, 194, 194);
+  margin-left: auto;
+}
