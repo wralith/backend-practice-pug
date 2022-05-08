@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const ArtistSchema = new mongoose.Schema({
   name: String,
-  birthDate: String,
+  birthDate: Number,
   knownFor: String,
   country: String,
   // arts: [

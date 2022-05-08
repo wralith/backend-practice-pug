@@ -1,0 +1,14 @@
+extends layout
+block content
+  h1 Artists
+  p #{artists.length} artists in our databases
+  div.card
+    h3 List of artists
+    ul
+      each artist in artists
+        li.list-title
+          a(href=`artists/${artist.id}`)= artist.name
+          small= 'was born on ' + artist.birthDate + ' in ' + artist.country
+        hr
+    
+  a(href='/').card Homepage

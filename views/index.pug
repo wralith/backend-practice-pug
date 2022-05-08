@@ -1,26 +1,29 @@
 extends layout
 block content
-  h1= 'Hello Pug'
-  p= 'This is a practice app to understand how express works'
+  h1 Hello Art
+  p This is a practice app to understand how express works
   br
-  div#card
-    h3= 'Simple Project on my Journey to Backend'
+  div.card
+    h3 Simple Project on my Journey to Backend
     ul
-      li
+      li.list-title
         input(type='checkbox' checked)
-        p= 'Create layout and index page'
-        small= 'Add Express and Pug'
-      li
+        p Create layout and index page
+        small Add Express and Pug
+      li.list-title
         input(type='checkbox' checked)
-        p= 'Create art and artist db'
-        small= 'Add MongoDB'
-      li
+        p Create art and artist db
+        small Add MongoDB
+      li.list-title
         input(type='checkbox')
-        p= 'Create routes and render data on pages'
-        small= 'Read'
-      li 
+        p Create routes and render data on pages
+        small Read
+      li.list-title 
         input(type='checkbox')
-        p= 'Add forms to write on database'
-      li 
+        p Add forms to write on database
+      li.list-title 
         input(type='checkbox')
-        p= 'Add more options on editing database'
+        p Add more options on editing database
+
+  a(href='/artists').card Artists List 
+  //- TODO Need nav because there would be more...

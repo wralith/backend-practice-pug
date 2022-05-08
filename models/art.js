@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const ArtSchema = new mongoose.Schema({
   name: String,
   museum: String,
-  year: String,
+  year: Number,
   country: String,
   artist: {
     // Populates with Artist.ObjectID

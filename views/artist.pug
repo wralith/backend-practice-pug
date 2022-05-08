@@ -1,0 +1,23 @@
+extends layout
+block content
+  h1='Artist Page'
+  
+  div.card
+    h3= artist.name
+    p= artist.name + ' was born in ' + artist.country + ' on ' + artist.birthDate + '.'
+  
+
+  // TODO below section will automatically populate with each art in artist.arts 
+  h3= 'Masterpieces from ' + artist.name
+  div.card
+    ul
+      li 
+        div.list-title
+          h4 Dummy Art Name
+          small made on 1950 in Earth
+        small on display in Test Museum.
+        br
+        p Description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cupiditate ipsam at.
+        img(src='https://dummyimage.com/600x400/6e606e/fff.jpg')
+
+    
