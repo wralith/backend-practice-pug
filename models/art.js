@@ -1,14 +1,19 @@
 const mongoose = require('mongoose')
 
 const ArtSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true,
+    minlength: 1,
+  },
   museum: String,
   year: Number,
   country: String,
   artist: {
-    // Populates with Artist.ObjectID
+    // TODO add default unknown 
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Artist',
+    required: true,
     autopopulate: { maxDepth: 1 }
   }
 })
