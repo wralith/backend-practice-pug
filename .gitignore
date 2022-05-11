@@ -4,3 +4,6 @@
 # Node
 node_modules/*
 pnpm-lock.yaml
+
+# Test
+coverage

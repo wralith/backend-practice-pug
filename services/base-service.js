@@ -10,9 +10,13 @@ class Service {
   async removeByName(name) {
     return this.model.deleteOne({ name: name })
   }
-
+  
+  async removeById(id) {
+    return this.model.deleteOne({ _id: id })
+  }
+  
   async find(itemId) {
-    return this.model.findById(itemId)
+    return this.model.findOne({ _id: itemId})
   }
 }
 
